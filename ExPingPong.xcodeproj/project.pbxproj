@@ -13,9 +13,12 @@
 		4AC53397288ABD24002A533B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC53395288ABD24002A533B /* Main.storyboard */; };
 		4AC53399288ABD25002A533B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC53398288ABD25002A533B /* Assets.xcassets */; };
 		4AC5339C288ABD25002A533B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5339A288ABD25002A533B /* LaunchScreen.storyboard */; };
+		812C784359D2C9FDE75EFDAB /* Pods_ExPingPong.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056A836B784033EFA83F7937 /* Pods_ExPingPong.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		056A836B784033EFA83F7937 /* Pods_ExPingPong.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExPingPong.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B15C1952E37C5BF10950B02 /* Pods-ExPingPong.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExPingPong.debug.xcconfig"; path = "Target Support Files/Pods-ExPingPong/Pods-ExPingPong.debug.xcconfig"; sourceTree = "<group>"; };
 		4AC5338C288ABD24002A533B /* ExPingPong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExPingPong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC5338F288ABD24002A533B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AC53391288ABD24002A533B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		4AC53398288ABD25002A533B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AC5339B288ABD25002A533B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AC5339D288ABD25002A533B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FE468753843767176BF35CE /* Pods-ExPingPong.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExPingPong.release.xcconfig"; path = "Target Support Files/Pods-ExPingPong/Pods-ExPingPong.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				812C784359D2C9FDE75EFDAB /* Pods_ExPingPong.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				4AC5338E288ABD24002A533B /* ExPingPong */,
 				4AC5338D288ABD24002A533B /* Products */,
+				9CF51D95C2F01D00D482A55B /* Pods */,
+				6C3741474D85719CDC90964E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = ExPingPong;
 			sourceTree = "<group>";
 		};
+		6C3741474D85719CDC90964E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				056A836B784033EFA83F7937 /* Pods_ExPingPong.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CF51D95C2F01D00D482A55B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B15C1952E37C5BF10950B02 /* Pods-ExPingPong.debug.xcconfig */,
+				9FE468753843767176BF35CE /* Pods-ExPingPong.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AC533A0288ABD25002A533B /* Build configuration list for PBXNativeTarget "ExPingPong" */;
 			buildPhases = (
+				DDED976A72F405C2A3FAD161 /* [CP] Check Pods Manifest.lock */,
 				4AC53388288ABD24002A533B /* Sources */,
 				4AC53389288ABD24002A533B /* Frameworks */,
 				4AC5338A288ABD24002A533B /* Resources */,
+				D9B985FEB0A052E4F98BB810 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D9B985FEB0A052E4F98BB810 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExPingPong/Pods-ExPingPong-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExPingPong/Pods-ExPingPong-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExPingPong/Pods-ExPingPong-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDED976A72F405C2A3FAD161 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExPingPong-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4AC53388288ABD24002A533B /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		4AC533A1288ABD25002A533B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B15C1952E37C5BF10950B02 /* Pods-ExPingPong.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		4AC533A2288ABD25002A533B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FE468753843767176BF35CE /* Pods-ExPingPong.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
